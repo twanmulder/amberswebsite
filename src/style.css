@@ -57,5 +57,9 @@ footer p {
 footer a {
   font-size: 1.5vw;
   color: #fefefe;
-  margin-left: 20px;
+}
+
+footer p,
+footer a {
+  margin-right: 20px;
 }
