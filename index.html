@@ -25,7 +25,7 @@
 
       <div class="banner-bottom bg-gray-100 rounded-t-full"></div>
     </div>
-    <div id="app" class="app overflow-x-hidden">
+    <div id="app" class="app">
       <!-- Navigation -->
       <nav class="sticky flex-col md:flex-row px-12 py-4 bg-gray-100 text-gray-900 border border-gray-300 border-opacity-50 rounded-full shadow-md z-10">
         <a href="/" class="font-bold">
@@ -52,8 +52,25 @@
         </div>
         <!--Right Col-->
         <div class="relative w-full lg:w-1/2 lg:py-6 text-center">
-          <img src="img/blob1.svg" class="blob blob1" />
-          <img src="img/blob2.svg" class="blob blob2" />
+          <!-- Blob 1 -->
+          <svg class="blob blob1 w-4/5" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+            <g transform="translate(300,300)">
+              <path
+                d="M167.6,-174.9C202.3,-132.9,205.1,-66.5,193.9,-11.2C182.7,44.1,157.5,88.2,122.8,117.5C88.2,146.8,44.1,161.4,-0.6,162C-45.3,162.6,-90.5,149.2,-115.8,119.8C-141.2,90.5,-146.6,45.3,-156.1,-9.5C-165.7,-64.3,-179.4,-128.7,-154,-170.7C-128.7,-212.7,-64.3,-232.3,1.1,-233.4C66.5,-234.5,132.9,-216.9,167.6,-174.9Z"
+                fill="#43418f"
+              />
+            </g>
+          </svg>
+          <!-- Blob 2 -->
+          <svg class="blob blob2 w-4/5" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+            <g transform="translate(300,300)">
+              <path
+                d="M109.8,-119.2C142.8,-76.8,170.4,-38.4,183.7,13.3C197.1,65.1,196.1,130.1,163.1,153.1C130.1,176.1,65.1,157.1,5.8,151.3C-53.5,145.5,-107,153,-151.3,130C-195.7,107,-230.8,53.5,-230,0.8C-229.2,-51.9,-192.4,-103.7,-148,-146C-103.7,-188.4,-51.9,-221.2,-6.7,-214.5C38.4,-207.8,76.8,-161.5,109.8,-119.2Z"
+                fill="#5A67D8"
+              />
+            </g>
+          </svg>
+
           <img src="img/profile-pic.png" class="w-10/12 mx-auto rounded-full" />
         </div>
       </section>
