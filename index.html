@@ -9,17 +9,35 @@
     <link rel="stylesheet" href="css/style.css" />
     <title>Amber's Website</title>
   </head>
-  <body class="bg-gray-900 text-gray-100">
+  <body class="bg-gray-100 text-gray-900">
+    <div class="banner-section bg-indigo-800 text-gray-100 text-lg font-bold">
+      <div class="flex flex-col md:flex-row justify-center items-center">
+        <p>
+          I'm available for projects
+        </p>
+        <a href="#contact" class="mx-4 text-gray-100 text-opacity-50 hover:text-opacity-75 inline-flex items-center"
+          ><span>Reach out</span
+          ><svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10.5858 6.34317L12 4.92896L19.0711 12L12 19.0711L10.5858 17.6569L16.2427 12L10.5858 6.34317Z" fill="currentColor" /></svg
+        ></a>
+      </div>
+
+      <div class="banner-bottom bg-gray-100 rounded-t-full"></div>
+    </div>
     <div id="app" class="app">
       <!-- Navigation -->
-      <nav class="sticky flex-col md:flex-row px-5 py-2 bg-gray-900 border-4 border-gray-800 border-opacity-50 rounded-full">
-        <a href="index.html">
-          Home
+      <nav class="sticky flex-col md:flex-row px-12 py-4 bg-gray-100 border border-gray-300 border-opacity-50 rounded-full shadow-md">
+        <a href="/" class="font-bold">
+          Amber Chen
         </a>
         <div>
-          <a href="#about" class="px-2">About</a>
-          <a href="#projects" class="px-2">projects</a>
-          <a href="#contact" class="pl-2">contact</a>
+          <a href="#about" class="px-2 font-bold hover:text-indigo-700">About</a>
+          <a href="#projects" class="px-2 font-bold hover:text-indigo-700">projects</a>
+          <a href="#contact" class="pl-2 font-bold text-indigo-700 hover:text-purple-700 inline-flex items-center"
+            ><span>contact</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10.5858 6.34317L12 4.92896L19.0711 12L12 19.0711L10.5858 17.6569L16.2427 12L10.5858 6.34317Z" fill="currentColor" /></svg
+          ></a>
         </div>
       </nav>
       <!-- Hero -->
@@ -29,7 +47,7 @@
           <p class="uppercase tracking-loose">Hi, my name is</p>
           <h1 class="font-black text-5xl my-4">Amber Chen</h1>
           <p class="leading-normal mb-4">I'm an AI student who loves learning the ins and outs of Language Processsing. I'm based in the Netherlands where I study and work on a lot of cool things.</p>
-          <a href="#projects" class="bg-white hover:bg-indigo-800 text-indigo-800 hover:text-white rounded shadow hover:shadow-lg py-2 px-4 border border-gray-900 hover:border-transparent">View my projects</a>
+          <a href="#projects" class="bg-white hover:bg-indigo-700 text-indigo-800 hover:text-white rounded shadow hover:shadow-lg py-2 px-4 border border-gray-100 hover:border-transparent">View my projects</a>
         </div>
         <!--Right Col-->
         <div class="w-full lg:w-1/2 lg:py-6 text-center">
