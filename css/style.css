@@ -10,7 +10,13 @@ body {
 
 .banner-section {
   height: auto;
-  line-height: 80px;
+  line-height: 60px;
+}
+
+@media (min-width: 768px) {
+  .banner-section {
+    line-height: 80px;
+  }
 }
 
 .banner-bottom {
@@ -53,7 +59,4 @@ a:hover svg {
 
 #notification.-is-hidden {
   transform: translateY(4rem);
-}
-
-@media (min-width: 768px) {
 }
