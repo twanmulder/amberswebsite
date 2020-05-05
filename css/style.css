@@ -43,3 +43,17 @@ a:hover svg {
   grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
   justify-items: center;
 }
+
+#notification {
+  bottom: 1rem;
+  right: 1rem;
+  will-change: transform;
+  transition: transform 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+#notification.-is-hidden {
+  transform: translateY(4rem);
+}
+
+@media (min-width: 768px) {
+}

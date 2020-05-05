@@ -110,9 +110,29 @@
       <section id="contact" class="pt-64">
         <div class="w-full px-4 py-8 md:py-16 bg-indigo-800 text-gray-100 text-center rounded-lg shadow-xl">
           <h2 class="font-bold text-xl md:text-3xl">Curious about what I can do for you?</h2>
-          <p class="mt-2">Reach out to me via <span class="cursor-pointer underline js e-mail">email</span>, or find me on <a href="https://www.linkedin.com/in/amber-chen-561874181/" class="underline">LinkedIn</a></p>
+          <p class="mt-2">Reach out to me via <span class="cursor-pointer underline js e-mail">e-mail</span>, or find me on <a href="https://www.linkedin.com/in/amber-chen-561874181/" class="underline">LinkedIn</a></p>
         </div>
       </section>
     </div>
+
+    <!-- Notification badge -->
+    <div id="notification" class="fixed bottom-0 js notification -is-hidden">
+      <div class="py-2 px-4 bg-indigo-800 items-center text-indigo-100 leading-none rounded flex" role="alert">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M8 11C7.44772 11 7 11.4477 7 12C7 12.5523 7.44772 13 8 13H15.9595C16.5118 13 16.9595 12.5523 16.9595 12C16.9595 11.4477 16.5118 11 15.9595 11H8Z" fill="currentColor" />
+          <path d="M8.04053 15.0665C7.48824 15.0665 7.04053 15.5142 7.04053 16.0665C7.04053 16.6188 7.48824 17.0665 8.04053 17.0665H16C16.5523 17.0665 17 16.6188 17 16.0665C17 15.5142 16.5523 15.0665 16 15.0665H8.04053Z" fill="currentColor" />
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M5 3C3.89543 3 3 3.89543 3 5V19C3 20.1046 3.89543 21 5 21H19C20.1046 21 21 20.1046 21 19V5C21 3.89543 20.1046 3 19 3H5ZM7 5H5L5 19H19V5H17V6C17 7.65685 15.6569 9 14 9H10C8.34315 9 7 7.65685 7 6V5ZM9 5V6C9 6.55228 9.44772 7 10 7H14C14.5523 7 15 6.55228 15 6V5H9Z"
+            fill="currentColor"
+          />
+        </svg>
+        <span class="ml-2 text-left flex-auto">Copied e-mail to clipboard</span>
+      </div>
+    </div>
+
+    <!-- Load main script file -->
+    <script src="script/main.js"></script>
   </body>
 </html>
