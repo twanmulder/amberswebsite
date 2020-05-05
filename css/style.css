@@ -45,6 +45,45 @@ a:hover svg {
   transform: translateX(2px);
 }
 
+.blob {
+  position: absolute;
+  z-index: -1;
+}
+
+.blob1 {
+  bottom: -115px;
+  left: -70px;
+}
+
+.blob2 {
+  top: -95px;
+  right: -60px;
+}
+
+@media (min-width: 768px) {
+  .blob1 {
+    bottom: -95px;
+    left: -80px;
+  }
+
+  .blob2 {
+    top: -95px;
+    right: -50px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .blob1 {
+    bottom: -155px;
+    left: -130px;
+  }
+
+  .blob2 {
+    top: -115px;
+    right: -70px;
+  }
+}
+
 #projects .grid {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   justify-items: center;
