@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/style.css" />
     <title>Amber's Website</title>
   </head>
-  <body class="bg-gray-100 text-gray-900">
+  <body id="about" class="bg-gray-100 text-gray-700">
     <div class="banner-section bg-indigo-800 text-gray-100 text-lg font-bold">
       <div class="flex flex-col md:flex-row justify-center items-center">
         <p>
@@ -26,7 +26,7 @@
     </div>
     <div id="app" class="app">
       <!-- Navigation -->
-      <nav class="sticky flex-col md:flex-row px-12 py-4 bg-gray-100 border border-gray-300 border-opacity-50 rounded-full shadow-md">
+      <nav class="sticky flex-col md:flex-row px-12 py-4 bg-gray-100 text-gray-900 border border-gray-300 border-opacity-50 rounded-full shadow-md">
         <a href="/" class="font-bold">
           Amber Chen
         </a>
@@ -41,11 +41,11 @@
         </div>
       </nav>
       <!-- Hero -->
-      <div class="container mx-auto flex flex-col md:flex-row items-center my-12 md:my-24">
+      <section class="container mx-auto flex flex-col md:flex-row items-center my-12 md:my-24">
         <!--Left Col-->
         <div class="flex flex-col w-full lg:w-1/2 justify-center items-start pt-12 pb-24 px-6">
           <p class="uppercase tracking-loose">Hi, my name is</p>
-          <h1 class="font-black text-5xl my-4">Amber Chen</h1>
+          <h1 class="font-black text-gray-900 text-5xl my-4">Amber Chen</h1>
           <p class="leading-normal mb-4">I'm an AI student who loves learning the ins and outs of Language Processsing. I'm based in the Netherlands where I study and work on a lot of cool things.</p>
           <a href="#projects" class="bg-white hover:bg-indigo-700 text-indigo-800 hover:text-white rounded shadow hover:shadow-lg py-2 px-4 border border-gray-100 hover:border-transparent">View my projects</a>
         </div>
@@ -53,7 +53,28 @@
         <div class="w-full lg:w-1/2 lg:py-6 text-center">
           <img src="img/profile-pic.png" class="w-10/12 mx-auto rounded-full" />
         </div>
-      </div>
+      </section>
+      <!-- About -->
+      <!-- Projects -->
+      <section id="projects" class="pt-32">
+        <h2 class="font-black text-gray-900 text-4xl text-center">Projects</h2>
+        <div class="pt-24">
+          <div class="max-w-sm rounded overflow-hidden shadow-lg">
+            <img class="w-full" src="/img/text-rpg.png" alt="Sunset in the mountains" />
+            <div class="px-6 py-4">
+              <div class="font-bold text-gray-900 text-xl mb-2">Text-based RPG</div>
+              <p class="text-gray-700 text-base">
+                For this project, I created a text-based RPG using Java. The game takes you through a dangerous dungeon, seeking the passage out. It includes features like fighting, healing, shops, and saving/loading your game state.
+              </p>
+            </div>
+            <div class="px-6 py-4">
+              <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-bold text-gray-700 mr-2">#java</span>
+              <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-bold text-gray-700 mr-2">#OOP</span>
+              <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-bold text-gray-700">#videogame</span>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   </body>
 </html>
