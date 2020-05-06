@@ -11,8 +11,10 @@ function docReady(fn) {
 docReady(function () {
   // DOM is loaded and ready for manipulation here
   addEventListenerToEmailText();
+  animateHero();
 });
 
+// Custom copy email to clipboard + animation
 function addEventListenerToEmailText() {
   document.querySelector(".js.e-mail").addEventListener("click", function () {
     copyEmailToClipboard();
@@ -57,4 +59,23 @@ function hideEmailCopiedMessage() {
   if (notication.className.indexOf("-is-hidden") === -1) {
     notication.classList.add("-is-hidden");
   }
+}
+
+// Hero animation
+function animateHero() {
+  // Reveal text items
+  const textItemsToReveal = document.querySelectorAll(".js.reveal");
+  textItemsToReveal.forEach((item, index) => {
+    setTimeout(() => {
+      item.classList.add("show");
+    }, index * 300 + 300);
+  });
+
+  // Reveal title text
+  const titleItemsToReveal = document.querySelectorAll(".js.reveal-up");
+  titleItemsToReveal.forEach((item, index) => {
+    setTimeout(() => {
+      item.classList.add("show");
+    }, index * 150 + 400);
+  });
 }
