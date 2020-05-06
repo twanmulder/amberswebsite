@@ -12,6 +12,7 @@ docReady(function () {
   // DOM is loaded and ready for manipulation here
   addEventListenerToEmailText();
   animateHero();
+  setupIntersectionOberserver();
 });
 
 // Custom copy email to clipboard + animation
@@ -78,4 +79,43 @@ function animateHero() {
       item.classList.add("show");
     }, index * 150 + 400);
   });
+}
+
+// Intersection observer
+function setupIntersectionOberserver() {
+  // Callback function for observer
+  let callback = (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        return hideMainNavElement();
+      }
+      showMainNavElement();
+    });
+  };
+  // Create observer
+  let options = {
+    root: document.querySelector("#scrollArea"),
+    rootMargin: "0px",
+    threshold: 1.0,
+  };
+
+  let observer = new IntersectionObserver(callback, options);
+
+  // Observe hero title text
+  let target = document.querySelector(".js.hero-title");
+  observer.observe(target);
+}
+
+function hideMainNavElement() {
+  const mainNavElement = document.querySelector("nav > a");
+  if (mainNavElement.className.indexOf("hide") === -1) {
+    mainNavElement.classList.add("hide");
+  }
+}
+
+function showMainNavElement() {
+  const mainNavElement = document.querySelector("nav > a");
+  if (mainNavElement.className.indexOf("hide") > -1) {
+    mainNavElement.classList.remove("hide");
+  }
 }

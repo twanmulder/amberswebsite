@@ -34,6 +34,26 @@ nav {
   top: 1rem;
 }
 
+nav > a.hide {
+  pointer-events: none;
+}
+
+nav > a::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  max-height: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #f7fafc;
+  transition: max-height 0.2s ease-in-out;
+}
+
+nav > a.hide::after {
+  max-height: 20px;
+}
+
 a svg {
   transition: 0.15s ease-in-out transform;
 }
